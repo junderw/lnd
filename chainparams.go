@@ -33,6 +33,12 @@ var bitcoinTestNetParams = bitcoinNetParams{
 	rpcPort: "18334",
 }
 
+// bitcoinMainNetParams contains parameters specific to the main network
+var bitcoinMainNetParams = bitcoinNetParams{
+	Params:  &bitcoinCfg.MainNetParams,
+	rpcPort: "8334",
+}
+
 // bitcoinSimNetParams contains parameters specific to the simulation test
 // network.
 var bitcoinSimNetParams = bitcoinNetParams{

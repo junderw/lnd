@@ -110,7 +110,7 @@ func newChainControlFromConfig(cfg *config, chanDB *channeldb.DB,
 			TimeLockDelta: cfg.Bitcoin.TimeLockDelta,
 		}
 		cc.feeEstimator = lnwallet.StaticFeeEstimator{
-			FeeRate: 50,
+			FeeRate: 200,
 		}
 	case litecoinChain:
 		cc.routingPolicy = htlcswitch.ForwardingPolicy{
